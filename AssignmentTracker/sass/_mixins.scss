@@ -1,0 +1,19 @@
+/*Set of reusable CSS functions*/
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin mediaQuery($size){
+    @media only screen and (min-width: $size){
+        @content;
+    }
+}
